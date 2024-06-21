@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>2048</title>
+
+  <link href="style/rank.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"
+    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"
+    media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+  <!-- iPhone, retina -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, viewport-fit=cover, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+
+<body>
+  <header>
+    <img class="back-icon" src="./images/nav_back.svg" alt="back" onclick="back()" />
+    <h1>Top Ranks</h1>
+  </header>
+  <main class="container">
+
+    <div class="tab-wrap">
+      <div class="tab active" onclick="showWorldRankWithToy()">World</div>
+      <!-- <div class="tab" onclick="showRegionRankWithToy()">Region</div> -->
+      <div class="tab" onclick="showWorldRankWithoutToy()">World<span>(not toy)</span></div>
+      <!-- <div class="tab" onclick="showRegionRankWithoutToy()">Region<span>(not toy)</span></div> -->
+    </div>
+
+    <div class="table rank-table">
+      <div class="table-header">
+        <div class="table-row">
+          <div class="table-column">Rank</div>
+          <div class="table-column">Player</div>
+          <div class="table-column">Time</div>
+          <div class="table-column">Points</div>
+        </div>
+      </div>
+
+      <div class="table-body">
+        <div class="table-row">
+          <div class="table-column">
+            <div>-</div>
+          </div>
+          <div class="table-column">-</div>
+          <div class="table-column">-</div>
+          <div class="table-column">-</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="rank">
+      <div>-</div>
+    </div>
+    <div class="player">-</div>
+    <div class="time">-</div>
+    <div class="points">-</div>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/lovense.js"></script>
+  <script src="js/rank.js"></script>
+</body>
+</html>

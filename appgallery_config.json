@@ -1,0 +1,23 @@
+{
+	"version": "1",
+	"appId": "appIdxxxxxx",
+	"appVersion": "1.2",
+	"permission": [
+		"user_info"
+	],
+	"allowDomains": [
+		"unpkg.com",
+		"*.lovense.com",
+		"*.vercel.app",
+		"*.lovense-community.com",
+		"*.lovense-api.com",
+		"*.googletagmanager.com",
+		"google.com",
+		"*.w3.org",
+		"worldtimeapi.org",
+		"*.googleapis.com",
+		"xremote.bandnana.com",
+		"*.google-analytics.com",
+		"www.gstatic.com"
+	]
+}
